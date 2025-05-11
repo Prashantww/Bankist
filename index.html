@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <nav class="w100">
+      <h1>Login to get started</h1>
+      <form class="login">
+        <input class="user-id" type="text" placeholder="User Id" />
+        <input class="pin" type="text" placeholder="Pin" />
+        <button class="enter black">Enter</button>
+      </form>
+    </nav>
+
+    <main>
+      <div class="head w100">
+        <div>
+          <h2>Current Balance</h2>
+          <p class="balance-date">As of 24/2/2025, 5:54pm</p>
+        </div>
+        <h2 class="balance">$16,720.00</h2>
+      </div>
+
+      <div class="main-part w100">
+        <div class="history">
+          <div class="transaction">
+            <div class="flex space-between align-center w100">
+              <div>
+                <div class="flex align-center h100">
+                  <div class="status-lable-deposit"></div>
+                  <h2 class="transaction-date">14<sup>th</sup>February</h2>
+                </div>
+                <p class="status">9 Deposit</p>
+              </div>
+              <h2 class="money">$5,000.00</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <form class="transfer card">
+            <h2 id="main-title">Transfer Money</h2>
+            <div class="flex space-between w100">
+              <div>
+                <input class="transfer-to" type="text" />
+                <p>Transfer to</p>
+              </div>
+              <div>
+                <input type="text" class="transfer-amount" />
+                <p>Amount</p>
+              </div>
+            </div>
+            <button class="black send">Send</button>
+          </form>
+
+          <form class="loan card">
+            <h2>Request Loan</h2>
+            <div class="flex space-between w100">
+              <div>
+                <input type="text" class="loan-amount" />
+                <p>Amount</p>
+              </div>
+            </div>
+            <button class="black request">Request</button>
+          </form>
+
+          <form class="close-account card">
+            <h2>Close Account</h2>
+            <div class="flex space-between w100">
+              <div>
+                <input class="confirm-id" type="text" />
+                <p>Confirm User</p>
+              </div>
+              <div>
+                <input type="text" class="confirm-pin" />
+                <p>Confirm Pin</p>
+              </div>
+            </div>
+            <button class="black confirm">Confirm</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="w100 flex align-center space-between">
+        <div class="flex summary space-between">
+          <div class="flex base-line">
+            <h2 class="in-amount"><b>IN</b>&nbsp; $21,000.00</h2>
+          </div>
+
+          <div class="flex base-line">
+            <h2 class="out-amount"><b>OUT</b>&nbsp; $5,180.00</h2>
+          </div>
+
+          <div class="flex base-line">
+            <h2 class="interest"><b>INTEREST</b>&nbsp; $328.50</h2>
+          </div>
+        </div>
+
+        <p>You will be logged out in <i>09:28</i></p>
+      </div>
+      <button class="black sort">Sort</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

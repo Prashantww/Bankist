@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --green: #00D115;
+    --red: #FF4C4C;
+}
+
+@font-face {
+    font-family: 'ClashGrotesk';
+    src: url(fonts/ClashGrotesk-Light.woff2)
+       format('woff2'),
+    url(fonts/ClashGrotesk-Light.woff)
+    format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'ClashGrotesk';
+    src: url(fonts/ClashGrotesk-Regular.woff2)
+    format('woff2'),
+    url(fonts/ClashGrotesk-Regular.woff)
+    format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'ClashGrotesk';
+    src: url(fonts/ClashGrotesk-Medium.woff2)
+    format('woff2'),
+    url(fonts/ClashGrotesk-Medium.woff)
+    format('woff');
+    font-weight: 500;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'ClashGrotesk', sans-serif;
+    background-color: #F2F2F2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+  
+    /* Hide scrollbar for WebKit browsers */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+}
+
+.h100 {
+    height: 100%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: 400;
+    color: #404040;
+}
+
+h2 {
+    font-size: 1.99rem;
+}
+
+b{
+    font-weight: 400;
+}
+
+p, b {
+    font-size: 1.25rem;
+    color: black;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.nav-button {
+    width: 165px;
+    height: 35px;
+    outline: solid #5E5E5E 1px;
+    border-radius: 7px;
+    font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head h2 {
+    font-size: 2.66rem;
+}
+
+main {
+    width: 763.11px;
+    padding-top: 69px;
+    opacity: 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 37.48px;
+}
+
+
+.login > input, .login>button{
+    margin: 5px;
+}
+
+
+.main-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-part > div{
+    background-color: white;
+    height: 440.71px;
+    padding: 5.83px;
+    border-radius: 11.66px;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+
+  /* Hide scrollbar for WebKit browsers */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.history {
+    width: 420.71px;
+}
+
+.actions {
+    width: 327.4px;
+    overflow: hidden;
+}
+
+.transaction, .card{
+    background-color: #F3F3F3;
+    border-radius: 5.83px;
+    height: 66.65px;
+    padding: 15.83px;
+    margin-bottom: 5.83px;
+}
+
+.status-lable-deposite {
+    height: 9px;
+    width: 9px;
+    background-color: var(--green);
+    border-radius: 7px;
+    margin-right: 3.33px;
+}
+
+.status-lable-withdrawal {
+    height: 9px;
+    width: 9px;
+    background-color: var(--red);
+    border-radius: 7px;
+    margin-right: 3.33px;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.card {
+    height: 139.13px;
+}
+
+input {
+    border: none;
+    background-color: white;
+    width: 137.46px;
+    height: 30.82px;
+    border-radius: 5.83px;
+    margin-bottom: 2.83px;
+    font-size: 18px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.actions h2{
+    margin-bottom: 4.16px;
+}
+
+.black {
+    width: 137.46px;
+    height: 30.82px;
+    background-color: black;
+    border-radius: 5.83px;
+    font-size: 13.33px;
+    font-weight: 400;
+    color: white;
+    margin-top: 4.16px;
+}
+
+.in-amount, .interest {
+    color: #00D115;
+}
+
+.out-amount {
+    color: #FF4C4C;
+}
+
+.base-line {
+    align-items: flex-end;
+}
+
+.summary {
+    width: 441.89px;
+}
+
+i {
+    font-weight: 500;
+    font-style: normal;
+}
+
+sup {
+    font-size: 0.5em;
+    vertical-align: middle;
+    font-weight: 500;
+}
